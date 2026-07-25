@@ -1,0 +1,35 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/coral-xyz/anchor/blob/master/CHANGELOG.md
+product: Anchor
+scheme: semver
+scheme_notes: >-
+  Keep a Changelog format; SemVer where, per the project note, the minor version is
+  incremented on a breaking change and the patch version on features while at 0.x.
+  The repository now lives under solana-foundation/anchor with security fixes routed
+  through otter-sec/anchor; packages continue to publish under the @coral-xyz npm scope.
+current_version: 1.1.2
+changelog_url: https://github.com/coral-xyz/anchor/blob/master/CHANGELOG.md
+entries:
+- version: Unreleased
+  breaking: false
+  highlights:
+  - spl: Add pausable mint extension support (#4092).
+  - spl: Add token_metadata_remove_key for token metadata extension (#3717).
+  - lang: Always derive Clone and Debug for generated types in declare_program! (#4723).
+  - lang: Add AccountLoader::new_unchecked (#4162).
+  - cli: Warn on unused Anchor.toml fields (#4749).
+- version: 1.1.2
+  date: '2026-06-26'
+  breaking: false
+  highlights:
+  - deps: Tighten dependencies between anchor-* crates to reduce breakage (#4726).
+- version: 1.1.1
+  date: '2026-06-25'
+  breaking: false
+  highlights:
+  - ts: Re-implement verifiedBuild using the OtterSec registry (verify.osec.io), replacing the defunct apr.dev API (#4522).
+  - client: Add versioned transaction support (#4207).
+  - cli: Support multiple named scripts in Anchor.toml via anchor test --script / anchor run (#3999).
+  - cli/idl: Add fetch-historical support to recover historical IDLs (#3992).
+  - lang: Migrate anchor-syn from syn 1.x to syn 2.0 (#4523).

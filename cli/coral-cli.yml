@@ -1,0 +1,67 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.anchor-lang.com/docs/references/cli
+name: anchor
+description: >-
+  The Anchor CLI is the first-party command-line tool for building, testing, deploying,
+  and managing Solana programs written with the Anchor framework. It manages the
+  workspace, program keypairs, IDLs, and localnet-based integration tests.
+install:
+- method: avm
+  description: Anchor Version Manager (recommended) — installs and switches anchor versions.
+  commands:
+  - cargo install --git https://github.com/coral-xyz/anchor avm --force
+  - avm install latest
+  - avm use latest
+- method: cargo
+  description: Direct install of a specific anchor-cli version from source.
+  commands:
+  - cargo install --git https://github.com/coral-xyz/anchor anchor-cli --force
+- method: npm
+  description: npm distribution of the CLI.
+  commands:
+  - npm install -g @coral-xyz/anchor-cli
+commands:
+- name: init
+  description: Initializes a new Anchor workspace with the standard project layout.
+- name: new
+  description: Creates a new program in an existing workspace.
+- name: build
+  description: Builds the workspace, targeting Solana's BPF/SBF runtime, and emits IDLs.
+- name: deploy
+  description: Deploys each program in the workspace to the configured cluster.
+- name: upgrade
+  description: Upgrades a single already-deployed program via the BPF loader.
+- name: test
+  description: Runs integration tests against a local validator (localnet).
+- name: verify
+  description: Verifies that on-chain bytecode matches the locally compiled artifact.
+- name: expand
+  description: Expands the macros of a program or the whole workspace (supports --stdout).
+- name: migrate
+  description: Runs the deploy migration script.
+- name: run
+  description: Runs a named script defined in Anchor.toml (alias r).
+- name: shell
+  description: Starts a Node shell with an Anchor client already set up.
+- name: account
+  description: Fetches and deserializes an on-chain account using the provided IDL.
+- name: cluster
+  description: Manages and lists cluster endpoints.
+  subcommands:
+  - {name: list, description: Display available cluster endpoints.}
+- name: keys
+  description: Manages program keypairs.
+  subcommands:
+  - {name: list, description: Display all program keypairs.}
+  - {name: sync, description: Synchronize program IDs with declared declare_id! values.}
+- name: idl
+  description: Commands for interacting with a program's interface definition (IDL).
+  subcommands:
+  - {name: build, description: Generate the IDL for a program.}
+  - {name: init, description: Create an IDL account on-chain.}
+  - {name: fetch, description: Retrieve an IDL from the blockchain.}
+  - {name: fetch-historical, description: Recover historical IDLs from the chain.}
+  - {name: authority, description: Show the IDL account's authority.}
+  - {name: erase-authority, description: Remove IDL upgrade permissions.}
+  - {name: upgrade, description: Update the on-chain IDL file.}

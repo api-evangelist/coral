@@ -1,0 +1,64 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/coral-xyz/anchor
+notes: >-
+  First-party Anchor framework packages published under the @coral-xyz npm scope and
+  the anchor-* crates.io family. Anchor is a Solana smart-contract framework, so these
+  are client/framework libraries and a CLI rather than a REST API SDK. Verified live
+  on the registries on 2026-07-18.
+packages:
+- language: typescript
+  registry: npm
+  name: "@coral-xyz/anchor"
+  url: https://www.npmjs.com/package/@coral-xyz/anchor
+  install: npm install @coral-xyz/anchor
+  version: 0.32.1
+  license: MIT OR Apache-2.0
+  description: Anchor TypeScript client for Solana programs.
+  official: true
+- language: typescript
+  registry: npm
+  name: "@coral-xyz/anchor-cli"
+  url: https://www.npmjs.com/package/@coral-xyz/anchor-cli
+  install: npm install -g @coral-xyz/anchor-cli
+  description: npm distribution of the anchor CLI.
+  official: true
+- language: typescript
+  registry: npm
+  name: "@coral-xyz/borsh"
+  url: https://www.npmjs.com/package/@coral-xyz/borsh
+  install: npm install @coral-xyz/borsh
+  description: Borsh serialization helpers used by the Anchor TS client.
+  official: true
+- language: typescript
+  registry: npm
+  name: "@coral-xyz/spl-token"
+  url: https://www.npmjs.com/package/@coral-xyz/spl-token
+  install: npm install @coral-xyz/spl-token
+  description: SPL Token bindings maintained under the Coral scope.
+  official: true
+- language: rust
+  registry: crates.io
+  name: anchor-lang
+  url: https://crates.io/crates/anchor-lang
+  install: cargo add anchor-lang
+  version: 1.1.2
+  description: Solana Sealevel eDSL — the core Anchor Rust framework.
+  docs: https://docs.rs/anchor-lang
+  official: true
+- language: rust
+  registry: crates.io
+  name: anchor-spl
+  url: https://crates.io/crates/anchor-spl
+  install: cargo add anchor-spl
+  description: CPI helpers and account types for SPL programs within Anchor.
+  docs: https://docs.rs/anchor-spl
+  official: true
+- language: rust
+  registry: crates.io
+  name: anchor-client
+  url: https://crates.io/crates/anchor-client
+  install: cargo add anchor-client
+  description: Rust client for interacting with Anchor programs.
+  docs: https://docs.rs/anchor-client
+  official: true
