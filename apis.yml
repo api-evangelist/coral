@@ -49,6 +49,19 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: IssueTracker
+  url: https://github.com/coral-xyz/anchor/issues
+- type: Releases
+  url: https://github.com/coral-xyz/anchor/releases
+- type: SecurityPolicy
+  url: https://github.com/otter-sec/anchor/blob/master/SECURITY.md
+- type: CodeOfConduct
+  url: https://github.com/otter-sec/anchor/blob/master/CODE_OF_CONDUCT.md
+- type: ContributionGuide
+  url: https://github.com/otter-sec/anchor/blob/master/CONTRIBUTING.md
+- type: License
+  name: Apache-2.0
+  url: https://github.com/coral-xyz/anchor/blob/master/LICENSE
 - type: Website
   url: https://www.anchor-lang.com
 - type: DeveloperPortal
